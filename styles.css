@@ -1,0 +1,56 @@
+header{
+    background-color: rgb(239, 192, 80);
+text-align: center;
+  }
+
+body{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+}
+
+.visitorform{
+    margin: auto;
+    text-align: center;
+    background-color: #cf8cd8;
+    padding: 20px;
+    width: 400px;
+  }
+
+ 
+
+tr{
+    margin: auto;
+    padding: auto;
+}
+  
+.button {
+    margin: auto;   
+    background-color: #e72b09; 
+    text-align: center; 
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer; 
+    font-size: 16px; 
+    color: white;
+    
+}
+.container{
+    margin: auto;
+    align-items: center;
+}
+
+table, th, td {
+    border: 1px solid;
+    
+  }
+
+table{
+    border-collapse: collapse;
+    margin-left: 132px;
+    background-color: rgb(159, 253, 136);
+    border-width: 3px;
+}
+  
