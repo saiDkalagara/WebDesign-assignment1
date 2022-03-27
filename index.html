@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms</title>
+</head>
+<body>
+
+    <header><h1>VisitorForm</h1></header>
+  
+    <div>
+        <table>
+        
+            <form id="visitorform">
+                <tr>
+                    <td>
+                        <label>Name</label>
+                    </td>
+                    <td><input type="text" id="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label>
+                    </td>
+                    <td><input type="email" id="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label> Tel No. </label>
+                    </td>
+                    <td><input type="telnum" id="telnum" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label> Pincode </label>
+                    </td>
+                    <td><input type="number" id="pincode" />
+                    </td>
+                </tr>
+    
+    
+            </form>
+        </table>
+
+    </div><br><br>
+
+   
+        
+    <button onclick="btnsubmit()" class="button">Submit</button><br><br>
+
+
+
+
+
+    <div class="container">
+        <table id="tableclass">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Tel No</th>
+                    <th>Pincode</th>
+
+                </tr>
+                
+            </thead>
+         
+        </table>
+    </div>
+</body>
+<Script>
+    function btnsubmit() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var telnum = document.getElementById('telnum').value;
+        var pincode = document.getElementById('pincode').value;
+
+        document.getElementById('tableclass').innerHTML += "<tr>"
+            + "<td>" + name + "</td>"
+            + "<td>" + email + "</td>"
+            + "<td>" + telnum + "</td>"
+            + "<td>" + pincode + "</td>"
+            "</tr>";
+    }
+</Script>
+  
+</html>
